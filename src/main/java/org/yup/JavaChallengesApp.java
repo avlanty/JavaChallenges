@@ -19,11 +19,35 @@ public class JavaChallengesApp {
 
         //code below is running greetingWithUserInput()
 
+//        System.out.println(greeting);
+//        System.out.println(challenges.greetingWithUserInput());
+//        System.out.println(challenges.addTwoNumbers());
+//        System.out.println(challenges.subtractTwoNumbers());
+//        System.out.println(challenges.multiplyTwoNumbers());
 
-        System.out.println(challenges.addTwoNumbers());
-        System.out.println(challenges.subtractTwoNumbers());
-        System.out.println(challenges.multiplyTwoNumbers());
+//        int interactiveCalculatorResult = challenges.interactiveCalculator();
+//        System.out.println(interactiveCalculatorResult);
+
+
+
+//        System.out.println(challenges.coinFlip());
+
+//        System.out.println(challenges.findTheBiggestNumber());
+
+//        System.out.println(challenges.findTheDifferenceBetweenTwoNumbers());
+
+//        System.out.println(challenges.convertToUppercase());
+
+//        System.out.println(challenges.convertToLowerCase());
+
+        System.out.println(challenges.lengthOfWord());
+
+
+
+
 
     }
+
+
 
 }

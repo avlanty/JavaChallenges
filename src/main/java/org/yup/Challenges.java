@@ -81,5 +81,140 @@ public class Challenges {
         return number1 * number2;
     }
 
+    public int interactiveCalculator(){
+
+        //fire up scanner so we can use it
+        Scanner theScanner = new Scanner(System.in);
+
+        //displays some set of choices to the user
+        System.out.println("Welcome to the calculator!");
+        System.out.println("Press 1 to add numbers");
+        System.out.println("Press 2 to subtract numbers");
+        System.out.println("Press 3 to multiply numbers");
+        System.out.print("Enter your selection and press ENTER: ");
+
+        //this sits and waits for the user to give (1,2,3). when they hit enter their selection is stored in userSelection
+        int userSelection = theScanner.nextInt();
+
+        //creating a variable to store the result of the math
+        int result;
+
+        switch (userSelection){
+            case 1:
+                result = this.addTwoNumbers();
+                break;
+            case 2:
+                result = this.subtractTwoNumbers();
+                break;
+            case 3:
+                result = this.multiplyTwoNumbers();
+                break;
+            default:
+                System.out.println("the user chose nonsense");
+                result = 0;
+        }
+
+        return result;
+
+    }
+
+    public String coinFlip(){
+        //attempt to flip a coin
+        //return heads or tails
+
+        //this is where we flip the coin
+        if(Math.random() > .5){
+            //here is where we return heads if the number generated was > .5
+            return "heads";
+        }else{
+            //here is where we return tails if the number generated was < .5
+            return "tails";
+        }
+
+    }
+
+    public String findTheBiggestNumber(){
+
+        //this is the scanner that lets us take input from the user
+        Scanner theScanner = new Scanner(System.in);
+
+        //this is where we ask the user for input
+        System.out.print("Give me the first number please: ");
+        //this is where we capture that input and store it in a variable called num1
+        int num1 = theScanner.nextInt();
+
+        //this is where we ask the user for input
+        System.out.print("Give me the second number please: ");
+        //this is where we capture that input and store it in a variable called num1
+        int num2 = theScanner.nextInt();
+
+        int theBiggestNumber = Math.max(num1, num2);
+
+        return "The biggest number between " + num1 + " and " + num2 + " is: " + theBiggestNumber;
+
+    }
+
+    public String findTheSmallestNumber(){
+
+        //this is the scanner that lets us take input from the user
+        Scanner theScanner = new Scanner(System.in);
+
+        //this is where we ask the user for input
+        System.out.print("Give me the first number please: ");
+        //this is where we capture that input and store it in a variable called num1
+        int num1 = theScanner.nextInt();
+
+        //this is where we ask the user for input
+        System.out.print("Give me the second number please: ");
+        //this is where we capture that input and store it in a variable called num1
+        int num2 = theScanner.nextInt();
+
+        int theSmallestNumber = Math.max(num1, num2);
+
+        return "The smallest number between " + num1 + " and " + num2 + " is: " + theSmallestNumber;
+
+    }
+
+    public String findTheDifferenceBetweenTwoNumbers(){
+
+        Scanner theScanner = new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int num1 = theScanner.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = theScanner.nextInt();
+        int sum = num1 - num2;
+        int theDifference = Math.abs(sum);
+        return "The difference between " + num1 + " and " + num2 + " is: " + theDifference;
+
+    }
+
+    public String convertToUppercase(){
+
+        Scanner theScanner = new Scanner(System.in);
+        System.out.print("Provide a word to convert to all CAPS: ");
+        String theWord = theScanner.nextLine();
+        return "You provided, " + theWord + " and we converted it to: " + theWord.toUpperCase();
+
+    }
+
+    public String convertToLowerCase(){
+
+        Scanner theScanner = new Scanner(System.in);
+        System.out.print("Provide a word to convert to all lowercase: ");
+        String theWord = theScanner.nextLine();
+        return "You provided, " + theWord + " and we converted it to: " + theWord.toLowerCase();
+
+    }
+
+    public String lengthOfWord(){
+
+        Scanner theScanner = new Scanner(System.in);
+        System.out.print("Provide a word to output its length: ");
+        String lengthWord = theScanner.nextLine();
+        return "You provided " + lengthWord + " and we've determined it is " + lengthWord.length() + " letters long.";
+
+    }
+
+
 
 }
