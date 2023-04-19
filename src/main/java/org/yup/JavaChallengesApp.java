@@ -40,7 +40,16 @@ public class JavaChallengesApp {
 
 //        System.out.println(challenges.convertToLowerCase());
 
-        System.out.println(challenges.lengthOfWord());
+//        System.out.println(challenges.lengthOfWord());
+
+
+//        challenges.countToTen();
+//        challenges.countFromTenToOne();
+//        challenges.countOneToHundred();
+        challenges.countZeroToFifty();
+
+
+
 
 
 
