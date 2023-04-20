@@ -46,8 +46,8 @@ public class JavaChallengesApp {
 //        challenges.countToTen();
 //        challenges.countFromTenToOne();
 //        challenges.countOneToHundred();
-        challenges.countZeroToFifty();
-
+//        challenges.countZeroToFifty();
+        challenges.countToTen();
 
 
 

@@ -217,8 +217,15 @@ public class Challenges {
 
     public void countToTen(){
 
-        for(int i = 1; i <= 10; i++){
+//        for(int i = 1; i <= 10; i++){
+//            System.out.println(i);
+//        }
+        int i = 1;
+        while(i <= 10){
             System.out.println(i);
+            i++;
+            //this code does the same output as the one above. for loops and while loops are basically the same.
+            //my preferred method may be for loops, seems easier to keep up with
         }
 
     }
@@ -245,5 +252,12 @@ public class Challenges {
             System.out.println(i);
         }
     }
-    
+
+
+
+
+
+
+
+
 }
